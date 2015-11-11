@@ -4,3 +4,5 @@
  I've completed during my amazing time at Codeup!
 
  - Allan
+
+Part of the Exercise
