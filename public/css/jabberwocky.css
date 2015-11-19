@@ -1,3 +1,8 @@
+body {
+		font-family: "Verdana";
+}
+
+
 h1 {
 	font-weight: bolder;
 }
@@ -20,17 +25,14 @@ h2.new-author {
 
 p.first-verse {
 	white-space: pre;
-	font-family: "Verdana";
 }
 
 p.second-verse {
 	text-align: right;
-	font-family: "Verdana";
 }
 
 p.third-verse {
 	white-space: pre;
-	font-family: "Verdana";
 }
 
 a {
