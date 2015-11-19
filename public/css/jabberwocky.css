@@ -2,13 +2,12 @@ body {
 		font-family: "Verdana";
 }
 
+header{
+	position: relative;
+}
 
 h1 {
 	font-weight: bolder;
-}
-
-header{
-	position: relative;
 }
 
 h2.previous-author {
@@ -23,15 +22,12 @@ h2.new-author {
 	display:inline;
 }
 
-p.first-verse {
+p.left-verse {
 	white-space: pre;
 }
 
 p.second-verse {
 	text-align: right;
-}
-
-p.third-verse {
 	white-space: pre;
 }
 
