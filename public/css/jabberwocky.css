@@ -1,0 +1,49 @@
+h1 {
+	font-weight: bolder;
+}
+
+header{
+	position: relative;
+}
+
+h2.previous-author {
+	text-align: left;
+	background-color: red;
+	text-decoration: line-through;
+	display:inline;
+}
+
+h2.new-author {
+	text-align: left;
+	display:inline;
+}
+
+p.first-verse {
+	text-indent: 50px;
+}
+
+p.second-verse {
+	text-align: right;
+}
+
+p.third-verse {
+	text-indent: 50px;
+}
+
+a {
+	text-decoration: none;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 200%;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+em {
+    font-style: italic;
+}
+
+span {
+    font-weight: bold;
+}
