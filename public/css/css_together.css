@@ -1,0 +1,10 @@
+h1 {
+			font-weight: normal;	
+		}
+		.abstract {
+			/*transform: rotate(180deg);*/
+			color: red;
+		}
+		#article-subhead {
+			background-color: salmon;
+		}
