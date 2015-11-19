@@ -19,15 +19,18 @@ h2.new-author {
 }
 
 p.first-verse {
-	text-indent: 50px;
+	white-space: pre;
+	font-family: "Verdana";
 }
 
 p.second-verse {
 	text-align: right;
+	font-family: "Verdana";
 }
 
 p.third-verse {
-	text-indent: 50px;
+	white-space: pre;
+	font-family: "Verdana";
 }
 
 a {
