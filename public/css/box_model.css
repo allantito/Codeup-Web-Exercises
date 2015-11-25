@@ -1,0 +1,46 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+div {
+	color: #FFF;
+	font-weight: bold;
+	width: 172px;
+	height: 72px;
+	border: 1px solid black;
+	padding: 10px;
+
+}
+
+.red {
+	background-color: #D84231;
+	margin: 10px 0px;
+}
+
+.orange {
+	background-color: #EAAE33;
+	margin: 10px 0px 10px 30px;
+}
+
+.yellow {
+	background-color: #FDF733;
+	margin: 10px 0px 10px 60px;
+}
+
+.green {
+	background-color: #578C05;
+	margin: 10px 0px 10px 90px;
+}
+
+.blue {
+	background-color: #234AFB;
+	margin: 10px 0px 10px 120px;
+}
+
+.pink {
+	background-color: #DF8BF0;
+	margin: 10px 0px 10px 150px;
+}
