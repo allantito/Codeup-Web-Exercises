@@ -1,0 +1,84 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+  	background-color: #252839;
+  	/*border: 1px solid #e05038;*/
+  	padding: 5px;
+}
+
+h3 {
+	margin: auto;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1200px;
+    background-color: #b5b5b7;
+    /*border: 1px solid #e05038;*/
+  	padding: 5px;
+}
+
+.row {
+    width:100%;
+    background-color: #677077;
+    /*border: 1px solid #e05038;*/
+  	padding: 5px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    background-color: #aa863a;
+    /*border: 1px solid #e05038; < Do not use border and padding with content: ""; >
+  	padding: 5px;*/	
+}
+
+.column {
+    float: left;
+    padding: 10px;
+    background-color: #573401;
+    /*border: 1px solid #e05038;*/
+  	padding: 5px;
+}
+
+.column.one-eighth {
+    width: 12.5%;
+    background-color: #337EBF;
+    /*border: 1px solid #e05038;*/
+  	padding: 5px;
+}
+
+.column.one-sixth {
+    width: 16.66%;
+    background-color: #7A2316;
+    /*border: 1px solid #e05038;*/
+  	padding: 5px;
+}
+
+.column.one-fourth {
+    width: 25%;
+    background-color: #9E254D;
+    /*border: 1px solid #e05038;*/
+  	padding: 5px;
+}
+
+.column.one-third {
+    width: 33.33%;
+    background-color: #f2b632;
+    /*border: 1px solid #e05038;*/
+  	padding: 5px;
+}
+
+.column.one-half {
+    width: 50%;
+    background-color: #494992;
+    /*border: 1px solid #e05038;*/
+  	padding: 5px;
+}
