@@ -63,7 +63,7 @@ h3 {
 }
 
 .column.two-third {
-    width: 66.67%;
+    width: 66.66%;
     background-color: #C17E81;
     /*border: 1px solid #e05038;*/
   	padding: 10px;
@@ -111,7 +111,20 @@ h3 {
   	padding: 10px;
 }
 
+.offset-one-half {
+	margin-left: 50%;
+}
 
+.offset-one-third {
+	margin-left: 33.33%;
+}
 
+.offset-two-third {
+	margin-left: 66.66%;
+}
+
+.offset-one-fourth {
+	margin-left: 25%;
+}
 
 
