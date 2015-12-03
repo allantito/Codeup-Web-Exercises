@@ -1,0 +1,66 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+  	background-color: #252839;
+  	padding: 10px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1200px;
+    background-color: #b5b5b7;
+  	padding: 10px;
+}
+
+.row {
+    width:100%;
+    background-color: #677077;
+  	padding: 10px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    background-color: #aa863a;
+    /*border: 1px solid #e05038; < Do not use border and padding with content: ""; >
+  	padding: 10px;*/	
+}
+
+.column {
+    float: left;
+    padding: 10px;
+    background-color: #573401;
+  	padding: 10px;
+}
+
+.alpha {
+    background-color: #494992;
+  	padding: 10px;
+}
+
+.bravo {
+    background-color: #f2b632;
+  	padding: 10px;
+}
+
+.charlie {
+    background-color: #C17E81;
+  	padding: 10px;
+}
+
+.delta {
+    background-color: #9E254D;
+    padding: 10px;
+}
+
+.echo {
+    background-color: #7A2316;
+    padding: 10px;
+}
