@@ -1,59 +1,59 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 *, *:before, *:after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-  	background-color: #E6E6E6;
-  	padding: 10px;
+  background-color: #E6E6E6;
 }
 
 .container {
-    margin: 0 auto;
-    width: 90%;
-    max-width: 1200px;
-  	padding: 10px;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
 }
 
 .row {
-    width:100%;
-    background-color: #FFFFFF;
-  	padding: 10px;
+  width:100%;
+  background-color: #FFFFFF;
+  padding: 10px;
 }
 
 .row:after {
-    content: "";
-    display: table;
-    clear: both;
-    background-color: #E6E6E6;
-    /*border: 1px solid #e05038; < Do not use border and padding with content: ""; >
+  content: "";
+  display: table;
+  clear: both;
+  background-color: #E6E6E6;
+  /*border: 1px solid #e05038; < Do not use border and padding with content: ""; >
   	padding: 10px;*/	
 }
 
 .column {
-    float: left;
-    padding: 10px;
-    background-color: #E6E6E6;
-    /*border: 1px solid #e05038;*/
-    padding: 10px;
+  float: left;
+  padding: 10px;
+  background-color: #E6E6E6;
+  padding: 10px;
 }
 
 .column.top-nav {
-    width: 100%;
-    background-color: #414959;
-    height: 100px;
-    padding: 10px;
-    display: inline;
+  width: 100%;
+  background-color: #414959;
+  height: 100px;
+  padding: 5px 10px 5px 10px;
+  display: inline;
 }
 
 .root-home {
   float: left;
+  background-color: #E51B23;
+  padding: 5px;
 }
 
 h1 {
   color: #FFFFFF;
+  padding: 0px 20px 0px 20px;
 }
 
 .list-nav {
@@ -61,6 +61,7 @@ h1 {
 }
 li {
   display: inline;
+  padding: 5px;
 }
 
 a {
@@ -68,103 +69,81 @@ a {
 }
 
 img {
-    opacity: 0.4;
-    filter: alpha(opacity=40); /* For IE8 and earlier */
+  opacity: 0.4;
+  filter: alpha(opacity=40); /* For IE8 and earlier */
 }
 
 .one-form {
-    background-image: url('/img/Stephen_Root.jpg');
-    background-repeat: no-repeat;
-    /*background-position: 0 -24px;
-    padding: 3px;*/
-    /*width: 100%;
-    height: 100%;*/
-    font-size: 1em;
-    padding-left: 10px;
+  background-image: url('/img/Stephen_Root.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0 -24px;
+  padding: 3px;
+  width: 100%;
+  height: 200px;
+  font-size: 1em;
+  padding-left: 10px;
+  margin: auto;
+  text-align: center;
+}
 
+h2 {
+  width: 100%;
 }
 
 .form-capture {
-  
+    
 }
 
-.column.one-half {
-    width: 50%;
-    background-color: #494992;
-    /*border: 1px solid #e05038;*/
-    padding: 10px;
+.form-field {
+  /*padding: 1px;*/
 }
 
-.column.one-third {
-    width: 33.33%;
-    background-color: #f2b632;
-    /*border: 1px solid #e05038;*/
-    padding: 10px;
+input {
+  display: inline-block;
+  float: left;
+  padding: 3px;
+  margin: 10px;
 }
 
-.column.two-third {
-    width: 66.66%;
-    background-color: #C17E81;
-    /*border: 1px solid #e05038;*/
-    padding: 10px;
+select {
+  display: inline-block;
+  float: left;
+  margin: 10px;
 }
 
-.column.one-fourth {
-    width: 25%;
-    background-color: #FFFFFF;
-    /*border: 1px solid #e05038;*/
-    padding: 10px;
+.form-submit {
+  margin: auto;
+  font-size: 20px;
+  margin: 5px;
 }
 
 .column.three-fourth {
-    width: 75%;
-    background-color: #FFFFFF;
-    /*border: 1px solid #e05038;*/
-    padding: 10px;
+  width: 75%;
+  background-color: #FFFFFF;
+  padding: 10px;
 }
 
-.column.one-sixth {
-    width: 16.66%;
-    background-color: #7A2316;
-    /*border: 1px solid #e05038;*/
-    padding: 10px;
+.column.one-fourth {
+  width: 25%;
+  background-color: #FFFFFF;
+  padding: 10px;
 }
 
-.column.three-sixth {
-    width: 50%;
-    background-color: #04902E;
-    /*border: 1px solid #e05038;*/
-    padding: 10px;
+.read-more {
+  color: #57ACDF;
 }
 
-.column.one-eighth {
-    width: 12.5%;
-    background-color: #337EBF;
-    /*border: 1px solid #e05038;*/
-    padding: 10px;
+.footer {
+  background-color: #373D4B;
+  padding: 10px;
 }
 
-.column.three-eighth {
-    width: 37.5%;
-    background-color: #009392;
-    /*border: 1px solid #e05038;*/
-    padding: 10px;
+blockquote {
+  color: #FFFFFF;
 }
 
-.offset-one-half {
-  margin-left: 50%;
+.footer-text {
+  text-align: center;
+  color: #FFFFFF;
 }
-
-.offset-one-third {
-  margin-left: 33.33%;
-}
-
-.offset-two-third {
-  margin-left: 66.66%;
-}
-
-.offset-one-fourth {
-  margin-left: 25%;
-}
-
-
