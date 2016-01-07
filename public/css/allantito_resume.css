@@ -1,0 +1,52 @@
+html {
+    box-sizing: border-box; 
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+  	background-color: #FFFFFF;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    background-color: #FFFFFF;
+}
+
+.row {
+    width: 100%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    background-color: #FFFFFF;
+}
+
+.page-header {
+  width: 100%;
+  text-align: center;
+}
+
+.full-name {
+  width: 40%;
+  border: 1px solid black;
+  margin: auto;
+}
+
+.title {
+  width: 100%;
+  margin: auto;
+}
+
+.photo img {
+  width: 20%;
+}
+
