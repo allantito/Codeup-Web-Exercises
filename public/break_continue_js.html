@@ -1,0 +1,60 @@
+<html>
+<head>
+	<title> Console</title>
+</head>
+<body>
+<script type="text/javascript">
+
+		do  {
+			var number = Math.floor(Math.random()*50)+1;
+			
+		} while (number%2 == 0);
+
+		console.log(number);
+
+		for (var x = 1; x <= 50; x++) {
+			
+			
+				if (x%2 === 0) {
+					continue;
+					
+			}
+			if (x === number) {
+						continue; //This line will skip the odd number from above
+					}
+					console.log(x);
+		}
+
+		// if (number%2 === 0) {
+		// 	break;
+		// } else {
+		// 	console.log(number);
+		// 	continue;
+		// }
+
+		// while
+		
+	// for (var j = 100; j >=1; j--) {
+	// 	if (j % 5 === 0) {
+	// 		console.log(j);
+	// 	}	
+	// }
+
+	// var divisor = 393
+	// for (var x = 858978; x > 0; x--) {
+	// 	if (x % divisor === 0) {
+	// 		console.log(x);
+	// 		break;
+	// 	}
+	// }
+
+	// for (var h = 50; h >= 1; h--) {
+	// 	if (h % 8 != 0) {
+	// 		continue;
+	// 	}	
+	// 	console.log(h);
+	// }
+
+</script>
+</body>
+</html>
