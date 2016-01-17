@@ -22,7 +22,7 @@ switch (color) {
 		console.log("Blue is the color of the sky.");
 		break;
 	default:
-		console.log('I do not know anything by that color');
+		console.log('I do not know anything about ' + color);
 }
 
 // if (color === 'red') {
