@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inline JS</title>
+</head>
+<body>
+    <script>
+	// todo:
+	// Create an array of 4 names using literal array notation, in a variable called 'names'.
+	var names = ["Kyra", "Nathan", "Nicolas", "Karissa"];
+
+	// todo:
+	// Create a log statement that will log the number of elements in the names array.
+		console.log(names.length);
+
+	// todo:
+	// Create log statements that will print each of the names array elements individually.
+
+		for (var i = 0; i < names.length; i++) {
+			console.log(names[i]);
+		}
+
+	// forEach Example
+
+
+	var letters = ["a", "b"];
+
+	letters.forEach(function (element, index, array) {
+		//element is the shape name
+		//index is the iterator
+		//array is the shapes array itself
+
+		console.log("The letter at index " + index + " is: " + element);
+	})
+
+	</script>
+
+
+</body>
+</html>
