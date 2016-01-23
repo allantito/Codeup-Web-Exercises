@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+        #map-canvas {
+            width: 770px;
+            height: 481px;
+            margin: auto;
+        }
+        #map-content {
+            width: 770px;
+            height: 481px;
+            margin: auto;
+            text-align: center;
+        }
+        img {
+            margin: auto;
+            text-align: center;
+        }
+        a:link { text-decoration: none; } 
+        a:visited { text-decoration: none; } 
+        a:hover { text-decoration: underline; } 
+        a:active { text-decoration: underline; } 
+    </style>
+</head>
+<body>
+    <!-- div to hold map -->
+    <div id="map-canvas"></div>
+    <!-- div to hold map -->
+    <div id="map-content">
+        <h1>Restaurant: Biga on the Banks</h1>
+        <p>Address: 203 S St Mary's St, San Antonio, Texas 78205, USA </p>
+        <h3>Fine Dining on the River Walk. 
+            An elegant enclave perched above a quiet bend on the San Antonio River Walk, Biga on the Banks inspires a fiercely loyal following. Chef/Owner Bruce Auden and Perny Shea, Director of Special Events, have created a relaxed, come-as-you-are ambience, offering world-class New American cuisine and expert service. Their wine cellar offers a deep and varied selection of wines to pair brilliantly with their cuisine while overlooking the San Antonio Riverwalk. To learn more about Biga read their blog, The Talk. Dinner is served seven nights a week. Chef Auden’s menus change daily, and prix fixe Seasonal Menus are always available.</h3>
+        <img src="/img/venison-quail_biga.jpg">
+    </div>
+
+    <!-- Load the Google Maps API [DON'T FORGET TO USE A KEY] -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgjZlzwSCrDsfMBDs7JvniIE8GRdQgNTk"></script>
+
+    <!-- Script to show address on map -->
+    <script type="text/javascript">
+    (function() {
+        "use strict";
+
+        var geocoder = new google.maps.Geocoder();
+
+        //geocode(request:GeocoderRequest, callback:function(Array.<GeocoderResult>, GeocoderStatus))
+
+        // Set our address to geocode
+        var address = "203 S St Mary's St, San Antonio, Texas 78205, USA";//"Calle Santa Isabel 376, Miraflores, Lima, Peru";
+
+        // Init geocoder object
+        var geocoder = new google.maps.Geocoder();
+
+        // Geocode our address
+        geocoder.geocode({ "address": address }, function(results, status) {
+
+           // Check for a successful result
+           if (status == google.maps.GeocoderStatus.OK) {
+
+               // Recenter the map over the address
+               map.setCenter(results[0].geometry.location);
+           } else {
+
+               // Show an error message with the status if our request fails
+               alert("Geocoding was not successful - STATUS: " + status);
+           }
+        });
+
+        // Set our map options
+        var mapOptions = {
+            // Set the zoom level
+            zoom: 18,
+
+            // This sets the center of the map at our location
+            center: {
+                lat:  29.4237271, //-12.13267,
+                lng:  -98.492237 //-77.027807
+            },
+
+            // Show this map in hybrid view
+            mapTypeId: google.maps.MapTypeId.HYBRID
+        };
+
+        
+
+        // Render the map
+        var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+
+        // Create lat and long for our marker position
+        var biga_on_the_banks = { lat: 29.4237271, lng: -98.492237 };
+
+        // Add the marker to our existing map
+        var marker = new google.maps.Marker({
+            position: biga_on_the_banks,
+            animation: google.maps.Animation.DROP,
+            map: map
+        });
+        // marker.addListener('click', function() {
+        //     infowindow.open(map, marker);
+        // });
+
+        // Create a new infoWindow object with content
+        var infowindow = new google.maps.InfoWindow({
+            content: "Changing the world, one dish at a time.</br> <a href=\"http://www.biga.com\">www.biga.com</a>"
+        });
+
+        // Open the window using our map and marker
+        marker.addListener('click', function() {
+            infowindow.open(map, marker);
+        });
+
+    })();
+    </script>
+</body>
