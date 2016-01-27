@@ -2,6 +2,13 @@
 <html>
     <head>
         <title>jquery_exercises.html</title>
+        <style>
+        .code {
+            border-style: solid;
+            border-width: 1px;
+            border-color: red;
+        }
+        </style>
         <script src="/js/jquery.js"></script>
     </head>
     <body>
@@ -9,11 +16,25 @@
         <h1 id="header">Code for San Antonio</h1>
         <div id="container">
             <p id="subtitle">Details</p>
+            <p class="code">of this event</p>
             <ul class="info">
                 <li id="item2">Every Monday</li>
                 <li id="item">7PM</li>
                 <li id="item3">Geekdom</li>
             </ul>
+        </div>
+        <div>
+            <nav>
+                <p class="code">Details<p>
+                <p> of</p>
+                <p class="code"> the </p>
+                <p> awesome <span>event</span> below</p>
+                <ul class="info">
+                    <li id="item2">Every Monday</li>
+                    <li id="item">7PM</li>
+                    <li id="item3">Geekdom</li>
+                </ul>
+            </nav>
         </div>
 
         <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
@@ -42,10 +63,20 @@
             // Alert only shows the first instance
 
             // Remove the duplicate id. Each id should be unique on that page
-            $(document).ready(function() {
-                var contents = $('#item').html();
-                alert(contents);
-            });
+            // $(document).ready(function() {
+            //     var contents = $('#item').html();
+            //     alert(contents);
+            // });
+
+            // Using jQuery, create a border around all elements with the class code that is 1 pixel wide and red. (div, span, p)
+            // $(document).ready(function() {
+            //     $('.code').css('border-width', 'border-color');
+            // });
+
+            // Remove the class from the span element. Refresh and test that the border has been removed. > It works
+
+            // Give another element an id of codeup. Does this element get a border now? > Yes
+
         </script>
         
     </body>
