@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jquery_exercises.html</title>
+        <script src="/js/jquery.js"></script>
+    </head>
+    <body>
+
+        <h1 id="header">Code for San Antonio</h1>
+        <div id="container">
+            <p id="subtitle">Details</p>
+            <ul class="info">
+                <li id="item2">Every Monday</li>
+                <li id="item">7PM</li>
+                <li id="item3">Geekdom</li>
+            </ul>
+        </div>
+
+        <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+        <script>
+            "use strict";
+
+            // Use jQuery to select an element by the id. Alert the contents of the element.
+            // $(document).ready(function() {
+            //     var contents = $('#header').html();
+            //     alert(contents);
+            // });
+
+            // Update the jQuery code to select and alert a different id.
+            // $(document).ready(function() {
+            //     var contents = $('#subtitle').html();
+            //     alert(contents);
+            // });
+
+            // Use the same id on 2 elements. How does this change the jQuery selection?
+            // $(document).ready(function() {
+            //     var contents = $('#item').html();
+            //     alert(contents);
+            // });
+            // Alert only shows the first instance
+
+            // Remove the duplicate id. Each id should be unique on that page
+            $(document).ready(function() {
+                var contents = $('#item').html();
+                alert(contents);
+            });
+        </script>
+        
+    </body>
+</html>
