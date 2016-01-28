@@ -13,10 +13,10 @@
     </head>
     <body>
 
-        <h1 id="header">Code for San Antonio</h1>
+        <h1 id="header">Code for San Antonio - is an H1</h1>
         <div id="container">
             <p id="subtitle">Details</p>
-            <p class="code">of this event</p>
+            <p class="code">of this event - is a p</p>
             <ul class="info">
                 <li id="item2">Every Monday</li>
                 <li id="item">7PM</li>
@@ -105,6 +105,38 @@
             // $(document).ready(function() {
             //      $('li, h1, p').css('background-color', 'yellow');
             // });
+
+            // Add jQuery code that will change the background color of a h1 element when clicked.
+            // $(document).ready(function() {
+            //     $('h1').click(
+            //         function() {
+            //             $(this).css('background-color', '#FF0');
+            //         }
+            //     );
+            // });
+
+            // Make all paragraphs have a font size of 18px when they are double clicked.
+            // $(document).ready(function() {
+            //     $('p').dblclick(
+            //         function() {
+            //             $(this).css('font-size', '18px');
+            //         }
+            //     );
+            // });
+
+            // Set all li text color to red when the mouse is hovering, reset to white when it is not.
+            $(document).ready(function() {
+                $('li').hover(
+                    function() {
+                        $(this).css('color', '#FF0000');
+                    },
+                    function() {
+                        $(this).css('color', '#FFFFFF');
+                    }
+                );
+            });
+
+
 
         </script>
         
