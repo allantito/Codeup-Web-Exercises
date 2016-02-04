@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> ajax_store.html + inventory.json</title>
+    </head>
+    <body>
+        <div>
+        	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+        	<script>
+			$(document).ready(function() {
+				console.log(a);
+				$.ajax("/data/inventory.json").fail(function(data) {
+					alert("AJAX call completed sucesfully");
+					console.log("Data returned from server:");
+					console.log(data);
+				});
+
+				// Assign to variable
+
+				// var item = $.ajax(“inventory.json”);
+
+				// Attach callback function to variable
+
+			    // item.done(function(data){
+			    //         console.log(data);
+			    //         data.forEach(function(element, index) {
+			    //             $(“inventory.json”).append(element.title + “<br/>”);
+			    //         });
+			    //      })
+			         // .fail(function() {
+			         //       alert(“This request failed”);
+			         // });
+			});
+			</script>
+		</div>
+	</body>
+</html>

@@ -1,2 +1,22 @@
-// get the input of the first text box and set to variable
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example jQuery Page</title>
+    <script src="/js/jquery.js"></script>
+    <script>
+        "use strict";
 
+        $(document).ready(function() {
+            $('#textfield').keydown(function() {
+                alert('.keydown() event fired');
+            });
+        });
+    </script>
+</head>
+<body>
+    <p>Please type something into this form:</p>
+    <form>
+        <input type="text" id="textfield" name="textfield" placeholder="Type Here"/>
+    </form>
+</body>
+</html>

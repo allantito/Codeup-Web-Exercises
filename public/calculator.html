@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="/css/calculator.css">
+		<style>
+			div {
+			margin: 5px;
+			background: yellow;
+			}
+			button {
+			margin: 5px;
+			font-size: 24px;
+			}
+			p {
+			margin: 5px;
+			color: blue;
+			}
+			span {
+			color: red;
+			}
+		</style>
+		<script src="/js/jquery.js"></script>
+ 
+        <script>
+        	"use strict";
+        	var num = "";
+
+		        	$(document).ready(function() {
+		        		$('#1b').click(function() {
+		        			num = parseInt(num + 1);
+		                    console.log(num);     
+		                });
+		        	});
+		</script>
+	</head>
+    <body>
+		<input type="text" id="firstBox" placeholder="firstBox">
+		<input type="text" name="symbol" placeholder="symbol">
+		<input type="text" name="secondOp" placeholder="secondOp"><br>
+        
+        <button id="1b" >
+       		1
+        </button>
+	        		
+        
+    
+        <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    </body>
+</html>

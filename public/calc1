@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Konami Code</title>
+        <style>
+        </style>
+    </head>
+    <body>
+
+       <!--  <h1>Konami Code</h1> -->
+
+        <script src="/js/jquery.js"></script>
+
+        
+        <script>
+            "use strict";
